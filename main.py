@@ -8,7 +8,7 @@ class TBot:
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.get("https://twitter.com/login")
-        self.__login("pablotcampos25@gmail.com", "KqEwRN9!!3uTjd")
+        self.__login(username, password)
         while True:
             self.__scrap_tweets()
             self.__scroll()
